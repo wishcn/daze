@@ -1,7 +1,4 @@
-FROM golang:1.12.6-alpine3.10 AS builder
-
-ENV GO111MODULE on
-ENV GOPROXY https://goproxy.io
+FROM golang:1.13-alpine AS builder
 
 RUN apk upgrade \
     && apk add git \
