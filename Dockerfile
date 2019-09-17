@@ -5,7 +5,7 @@ ENV GOPROXY https://goproxy.io
 
 RUN apk upgrade \
     && apk add git \
-    && go get -u -v github.com/frankpen/dazel/cmd/daze
+    && go get -u -v github.com/mohanson/daze/cmd/daze
 
 FROM alpine:3.10 AS dist
 
